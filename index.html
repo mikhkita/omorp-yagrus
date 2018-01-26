@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Как сфокусироваться на работающих трендах в 2018 году и вырасти в доходах в 10 раз?</title>
 	<meta name="keywords" content=''>
 	<meta name="description" content=''>
 
@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
-	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+	<link rel="shortcut icon" href="i/favicon.ico" type="image/vnd.microsoft.icon">
 </head>
 <body>
 	<div class="b b-left clearfix">
@@ -129,32 +129,48 @@
 				<div class="b-video-block-list">
 					<div class="b-video-block">
 						<a href="https://www.youtube.com/lXyVb7dx1tU" data-fancybox>
-							<iframe width="308" height="170" src="https://www.youtube.com/embed/lXyVb7dx1tU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							<h4>Валентин Остапенко</h4>
-							<p>Заработал 1 500 000 рублей за 4 месяца.
-							В первый месяц вырос в 10 раз</p>
+							<div class="b video-cont">
+								<img class="video-back"src="i/video-1.jpg">
+								<img class="youtube" src="i/youtube.svg">
+								<img class="youtube-hover" src="i/youtube-hover.svg">
+							</div>
 						</a>
+						<h4>Валентин Остапенко</h4>
+						<p>Заработал 1 500 000 рублей за 4 месяца.
+						В первый месяц вырос в 10 раз</p>
 					</div>
 					<div class="b-video-block">
 						<a href="https://www.youtube.com/U28mfY0raq0" data-fancybox>
-							<iframe width="308" height="170" src="https://www.youtube.com/embed/U28mfY0raq0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							<h4>Павел Антонюк</h4>
-							<p>Было 281 обращение, в октябре уже 501. Все это было достигнуту за счет Взлома Конверсии</p>
+							<div class="b video-cont">
+								<img class="video-back"src="i/video-2.jpg">
+								<img class="youtube" src="i/youtube.svg">
+								<img class="youtube-hover" src="i/youtube-hover.svg">
+							</div>
 						</a>
+						<h4>Павел Антонюк</h4>
+						<p>Было 281 обращение, в октябре уже 501. Все это было достигнуту за счет Взлома Конверсии</p>
 					</div>
 					<div class="b-video-block">
 						<a href="https://www.youtube.com/ZKRX6vaJmq4" data-fancybox>
-							<iframe width="308" height="170" src="https://www.youtube.com/embed/ZKRX6vaJmq4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							<h4>Олеся Цай</h4>
-							<p>Увеличили нашу прибыль в 2 раза, благодаря одной фишке от Владимира</p>
+							<div class="b video-cont">
+								<img class="video-back"src="i/video-3.jpg">
+								<img class="youtube" src="i/youtube.svg">
+								<img class="youtube-hover" src="i/youtube-hover.svg">
+							</div>
 						</a> 
-					</div>
+						<h4>Олеся Цай</h4>
+						<p>Увеличили нашу прибыль в 2 раза, благодаря одной фишке от Владимира</p>
+											</div>
 					<div class="b-video-block">
 						<a href="https://www.youtube.com/U0c4Eg91uvI" data-fancybox>
-							<iframe width="308" height="170" src="https://www.youtube.com/embed/U0c4Eg91uvI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							<h4>Максим Кривошеев</h4>
-							<p>Теперь стоимость клиента 600 рублей. Это феноменально!</p>
+							<div class="b video-cont">
+								<img class="video-back"src="i/video-4.jpg">
+								<img class="youtube" src="i/youtube.svg">
+								<img class="youtube-hover" src="i/youtube-hover.svg">
+							</div>
 						</a>
+						<h4>Максим Кривошеев</h4>
+						<p>Теперь стоимость клиента 600 рублей. Это феноменально!</p>
 					</div>
 				</div>
 			</div>
@@ -165,7 +181,8 @@
 				<h2>Не забудьте забрать ваш полезный<br>PDF-чек-лист для грамотного<br>оформления тарифной сетки</h2>
 				<img class="b-line-right" src="i/line-right.png">
 			</div>
-		</div>		
+		</div>
+		<div id="time"></div>		
 	</div>
 	<div class="b b-right">
 		<div class="b-right-top">
@@ -176,24 +193,24 @@
 			<div class="b-right-line-top"></div>
 			<div class="b-right-line-bottom"></div>
 			<div class="b-registration">
-				<p class="b-registration-text light-text">Зарегистрируйтесь за 04 минут 58 секунд</p>
+				<p class="b-registration-text light-text">Зарегистрируйтесь за <span id="timer"></span></p>
 				<img class="b-registration-left" src="i/docs.png"></img>
 				<p class="b-registration-right">и получите шаблон<br><b>для сегиентаци<br>Целевой Аудитории</b></p>
 			</div>
 		</div>
-		<form method="post" action="kitsend.php">
-			<input type="text" class="webform-email form-text required" name="email" placeholder="Введите ваш e-mail" required="required" data-desc="email">
+		<form method="post" action="kitsend.php" data-goal="">
+			<input type="text" class="webform-email form-text" name="email" placeholder="Введите ваш e-mail" required data-desc="email">
 			<div class="btn_wrap">
-				<a href="#" class="btn btn--primary order_btn submit upper btn_vk">
+				<a href="#" class="btn btn--primary btn_vk ajax">
 					<div class="btn--border"></div>Забронировать место<br>бесплатно
 				</a>
 			</div>
 			<div class="b-checkbox">
-				<input id="rersonal" type="checkbox" name="rersonal">
-				<label for="rersonal">Нажимая на кнопку, я даю свое <a href="#">согласие на обработку персональных данных</a> и соглашаюсь с условиями <a href="#">политики конфиденциальности</a></label>
+				<input id="personal" type="checkbox" name="personal" required checked>
+				<label for="personal">Нажимая на кнопку, я даю свое <a href="#">согласие на обработку персональных данных</a> и соглашаюсь с условиями <a href="#">политики конфиденциальности</a></label>
 			</div>
 			<div class="b-checkbox">
-				<input id="dispatch" type="checkbox" name="dispatch">
+				<input id="dispatch" type="checkbox" name="dispatch" required checked>
 				<label for="dispatch">Я хочу получать email-письма от В. Сургая о мероприятиях и/или иных услугах</label>
 			</div>
 		</form>
