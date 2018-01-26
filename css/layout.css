@@ -469,7 +469,7 @@ h3{
 
 .b-right{
 	position: fixed;
-	top: 50px;
+	top: 20px;
 	left: calc(50% + 250px);
 	width: 328px;
 }
@@ -750,4 +750,19 @@ input[placeholder] {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+}
+
+.or_btn{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px){
+	body{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.b-right{
+		left: 832px;
+	}
 }

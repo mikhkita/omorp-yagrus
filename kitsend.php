@@ -1,7 +1,7 @@
 <?php
 	require_once("phpmail.php");
 
-	$email_admin = "rom4es_1993@mail.com";
+	$email_admin = "rom4es_1993@mail.ru";
 	// $email_admin = "soc.taxi.35@gmail.com";
 
 	$from = "Мастер-класс для предпринимателей и маркетологов";

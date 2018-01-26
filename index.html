@@ -14,6 +14,12 @@
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Как сфокусироваться на работающих трендах в 2018 году и вырасти в доходах в 10 раз?">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://vk.com/doc137026512_458519196?hash=af4a42cfcb1ece55e5&dl=22546638c4f58196a8">
+	<meta property="twitter:image" content="https://vk.com/doc137026512_458519196?hash=af4a42cfcb1ece55e5&dl=22546638c4f58196a8">
+
 	<link rel="shortcut icon" href="i/favicon.ico" type="image/vnd.microsoft.icon">
 </head>
 <body>
@@ -193,16 +199,24 @@
 			<div class="b-right-line-top"></div>
 			<div class="b-right-line-bottom"></div>
 			<div class="b-registration">
-				<p class="b-registration-text light-text">Зарегистрируйтесь за <span id="timer"></span></p>
+				<p class="b-registration-text light-text">Зарегистрируйтесь за <span id="timer">05 минут 00 секунд</span></p>
 				<img class="b-registration-left" src="i/docs.png"></img>
 				<p class="b-registration-right">и получите шаблон<br><b>для сегиентаци<br>Целевой Аудитории</b></p>
 			</div>
 		</div>
-		<form method="post" action="kitsend.php" data-goal="">
+		<form method="post" action="kitsend.php" data-goal="mk3day">
 			<input type="text" class="webform-email form-text" name="email" placeholder="Введите ваш e-mail" required data-desc="email">
 			<div class="btn_wrap">
 				<a href="#" class="btn btn--primary btn_vk ajax">
-					<div class="btn--border"></div>Забронировать место<br>бесплатно
+
+					<div class="btn--border"></div>Забронировать место<br>бесплатно через E-mail
+					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+				</a>
+			</div>
+			<div class="or_btn">или</div>
+			<div class="btn_wrap">
+				<a href="javascript:void(0)" class="btn btn--primary submit upper btn_vk order_btn  trigger">
+					<div class="btn--border"></div>забронировать бесплатно<br>через вконтакте
 				</a>
 			</div>
 			<div class="b-checkbox">
@@ -215,10 +229,19 @@
 			</div>
 		</form>
 		
-		
 	</div>
 	
 	<div style="display:none;">
+		<div class="box-modal modal_3" id="course-17">
+			<a href="" class="box-modal_close arcticmodal-close"></a>
+
+			<!-- Senler.ru button code -->
+
+			<script>!window.jQuery && document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"><\/script>');</script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="//senler.ru/web/js/senler.js?2"></script><script type="text/javascript">try {Senler.ButtonSubscribe("senlerBtn-1516550835");} catch (e) {console.log(e);}</script>
+
+			<div id="senlerBtn-1516550835" data-vk_group_id="92129351" data-subscription_id="7164" data-text="Забронировать место" data-alt_text="Спасибо! Мы очень рады что вы приняли участие в нашем бесплатном мастер-классе и по этому вам скоро придет подарок от нас вконтакте. До встречи" class="senler senler-btn">Забронировать место</div>
+
+		</div>
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup" id="b-popup-1">
 			<h3>Оставьте заявку</h3>
@@ -257,5 +280,35 @@
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter47447509 = new Ya.Metrika2({
+	                    id:47447509,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true
+	                });
+	            } catch(e) { }
+	        });
+
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js";
+
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks2");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/47447509" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
 </body>
 </html>

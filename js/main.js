@@ -41,6 +41,11 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
 
+    function declOfNum(number, titles) { 
+        cases = [2, 0, 1, 1, 1, 2]; 
+        return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ]; 
+    }
+
     function startTimer(duration, display) {
         var start = Date.now(),
             diff,
@@ -58,7 +63,7 @@ $(document).ready(function(){
             minutes = minutes < 10 ? "0" + minutes : minutes;
             seconds = seconds < 10 ? "0" + seconds : seconds;
 
-            display.textContent = minutes + " мин. " + seconds + " сек."; 
+            display.textContent = minutes + " " + declOfNum(minutes, ['минуту', 'минуты', 'минут']) + " " + seconds + " " + declOfNum(seconds, ['секунду', 'секунды', 'секунд']); 
 
             if (diff <= 0) {
                 // add one second so that the count down starts at the full duration
@@ -75,11 +80,32 @@ $(document).ready(function(){
         setInterval(timer, 1000);
     }
 
-    window.onload = function () {
+    
         var fiveMinutes = 60 * 5,
         display = document.querySelector('#timer');
         startTimer(fiveMinutes, display);
-    };
+    
+    /*Senler.ButtonSubscribe("senlerBtn-111", { 
+        completeCallback: function ($e) { 
+        console.log('Запрос пришел успешно'); 
+        }, 
+        cancelCallback: function ($e) { 
+        console.log('Пользователь отписался'); 
+        }, 
+        successCallback: function ($e) { 
+        console.log('Пользователь подписался'); 
+        }, 
+        errorCallback: function ($e, jqXHR, textStatus, errorThrown) { 
+        console.log('Ошибка при запросе'); 
+        } 
+    });
+
+    successCallback: function ($e) { 
+    // console.log('Пользователь подписался'); 
+        ga('send', 'event', 'Button', 'click', 'subscribe'); 
+        yaCounterXXXXXX.reachGoal('subscribe'); 
+        } 
+    });*/
     
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {

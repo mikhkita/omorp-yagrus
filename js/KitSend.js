@@ -162,7 +162,7 @@ $(document).ready(function(){
 			}
 
 			if( $this.attr("data-goal") ){
-				yaCounter12345678.reachGoal($this.attr("data-goal"));
+				yaCounter47447509.reachGoal($this.attr("data-goal"));
 			}
 
   			$.ajax({
