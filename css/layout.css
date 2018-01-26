@@ -112,6 +112,7 @@ body {
 	padding-top: 50px;
 }
 a{
+	color: #000;
 	text-decoration: underline;
 }
 	a:hover{
@@ -386,6 +387,15 @@ h3{
 	.b-reviews{
 		padding: 0 42px;
 	}
+
+		.b-reviews h2{
+			margin-bottom: 25px;
+		}
+
+		.b-reviews a{
+			text-decoration: none;
+		}
+
 		.b-video-block-list{
 
 		}
@@ -691,7 +701,7 @@ input[placeholder] {
     font-family:'MuseoSansCyrl-300';
     font-size: 18px;
     width: 100%;
-    margin-bottom: 11px;
+    margin-bottom: 18px;
     border: 1px solid transparent;
     display: block;
     -webkit-border-radius: 3px;
