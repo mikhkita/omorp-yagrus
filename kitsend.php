@@ -1,11 +1,10 @@
 <?php
 	require_once("phpmail.php");
 
-	$email_admin = "rom4es_1993@mail.ru";
-	// $email_admin = "soc.taxi.35@gmail.com";
+	$email_admin = "course.lead@transfiguration.agency";
 
 	$from = "Мастер-класс для предпринимателей и маркетологов";
-	$email_from = "robot@taxi-chita.ru";
+	$email_from = "info@transfiguration.agency";
 
 	$deafult = array("name"=>"Имя","phone"=>"Телефон", "email"=>"E-mail");
 
@@ -41,6 +40,54 @@
 			echo "1";
 		}else{
 			echo "0";
+		}
+
+		$url = "https://api.getresponse.com/v3/contacts";
+		if(isset($_POST["email"])){
+
+			$ch = curl_init($url . "?query[campaignId]=ngVgz&query[email]=" . $_POST["email"]);
+			curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'X-Auth-Token: api-key 314a1e7a6132bd8f35779282ad3e7b25'));
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($ch, CURLOPT_GET, 1);
+			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+
+			$result = curl_exec($ch);
+			curl_close($ch);
+			
+			if($result === "[]")
+			{
+
+				$json = json_encode([
+					'email' => $_POST["email"],
+					'campaign' => [
+						'campaignId' => "ngVgz"
+					]
+				]);
+				
+				$ch = curl_init($url);
+				curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'X-Auth-Token: api-key 314a1e7a6132bd8f35779282ad3e7b25'));
+				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+				curl_setopt($ch, CURLOPT_POST, 1);
+				curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+				curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
+
+				$result = curl_exec($ch);
+				//echo $result;
+				$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+				curl_close($ch); 
+				if($result === "[]")
+				{
+					// echo 0;
+				}
+				else
+				{
+					// echo 1;
+				}
+			}
+			else
+			{
+				// echo 1;
+			}
 		}
 	}
 ?>

@@ -41,16 +41,6 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
 
-    $('[data-fancybox]').each(function(){
-        $this = $(this);
-        $this.fancybox({
-            buttons : [
-                'fullScreen',
-                'close'
-            ],
-        });
-    });
-
     function declOfNum(number, titles) { 
         cases = [2, 0, 1, 1, 1, 2]; 
         return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ]; 
@@ -89,6 +79,24 @@ $(document).ready(function(){
         timer();
         setInterval(timer, 1000);
     }
+
+    Senler.ButtonSubscribe("senlerBtn-1516550835", { 
+        completeCallback: function ($e) { 
+            console.log('Запрос пришел успешно'); 
+        }, 
+        cancelCallback: function ($e) { 
+            console.log('Пользователь отписался'); 
+        }, 
+        successCallback: function ($e) { 
+            yaCounter47447509.reachGoal("mk3day_vk");
+            $(".b-vk-s-link").click();
+            console.log('Пользователь подписался'); 
+        }, 
+        errorCallback: function ($e, jqXHR, textStatus, errorThrown) { 
+            $(".b-vk-e-link").click();
+            console.log('Ошибка при запросе'); 
+        } 
+    });
 
     
         var fiveMinutes = 60 * 5,

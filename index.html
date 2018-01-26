@@ -216,6 +216,12 @@
 			<div class="or_btn">или</div>
 			<div class="btn_wrap">
 				<a href="javascript:void(0)" class="btn btn--primary submit upper btn_vk order_btn  trigger">
+					<!-- Senler.ru button code -->
+
+					<script>!window.jQuery && document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"><\/script>');</script><script src="//senler.ru/web/js/senler.js?2"></script><script type="text/javascript">try {Senler.ButtonSubscribe("senlerBtn-1516550835");} catch (e) {console.log(e);}</script>
+
+					<div id="senlerBtn-1516550835" class="b-vk-butt" data-vk_group_id="92129351" data-subscription_id="7164" data-text="Забронировать место" data-alt_text="Спасибо! Мы очень рады что вы приняли участие в нашем бесплатном мастер-классе и по этому вам скоро придет подарок от нас вконтакте. До встречи"></div>
+
 					<div class="btn--border"></div>забронировать бесплатно<br>через вконтакте
 				</a>
 			</div>
@@ -269,6 +275,19 @@
 		<div class="b-thanks b-popup" id="b-popup-error">
 			<h3>Ошибка отправки!</h3>
 			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+
+		<a href="#b-popup-vk-s" class="b-vk-s-link fancy" style="display:none;"></a>
+		<div class="b-thanks b-popup" id="b-popup-vk-s">
+			<h3>Спасибо!</h3>
+			<h4>Мы очень рады что вы приняли участие в нашем бесплатном мастер-классе и по этому вам скоро придет подарок от нас вконтакте. До встречи</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+		<a href="#b-popup-vk-e" class="b-vk-e-link fancy" style="display:none;"></a>
+		<div class="b-thanks b-popup" id="b-popup-vk-e">
+			<h3>Регистрация не состоялась</h3>
+			<h4>Пожалуйста, повторите попытку или зарегистрируйтесь, указав свой e-mail.</h4>
 			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
 		</div>
 	</div>

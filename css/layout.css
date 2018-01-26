@@ -109,7 +109,7 @@ body {
 	-webkit-text-size-adjust: none;
 	color: #000;
 	background-color: #f4f4f4;
-	padding-top: 50px;
+	padding-top: 22px;
 }
 a{
 	color: #000;
@@ -323,7 +323,29 @@ h3{
 		ul.margin-last li:last-child{
 			margin-top: 31px;
 		}
-
+.b-popup{
+	width: 500px;
+}
+.b-popup .b-orange-butt{
+	background: #186dd3;
+    border: 0px;
+    padding: 17px;
+    margin-top: 20px;
+    width: 200px;
+    font-size: 16px;
+    color: #FFF;
+}
+.b-vk-butt{
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	-webkit-transform: scale(5);
+	-moz-transform: scale(5);
+	-ms-transform: scale(5);
+	-o-transform: scale(5);
+	transform: scale(5);
+	opacity: 0 !important;
+}
 	.b-speaker{
 		padding: 44px;
 	}
@@ -571,25 +593,26 @@ box-shadow: 0px 27px 30px -16px rgba(0,0,0,0.5);
 	padding: 10px 0 6px 0;
 	line-height: 24px;
 	font-size: 14px;
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    -webkit-border-radius: 1px;
-    -webkit-border-top-left-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
-    -moz-border-radius: 1px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-topright: 3px;
-    border-radius: 1px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background: #2c87f4;
-    background: -webkit-gradient(linear, left top, left bottom, from(#2c87f4), to(#0255b1));
-    background: -webkit-linear-gradient(top, #2c87f4 0%, #0255b1 100%);
-    background: -o-linear-gradient(top, #2c87f4 0%, #0255b1 100%);
-    background: linear-gradient(to bottom, #2c87f4 0%, #0255b1 100%);
-    border-bottom: solid 1px #266ebb;
-    border-top: solid 1px #479cf8;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	-webkit-border-radius: 1px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius: 1px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-radius: 1px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background: #2c87f4;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2c87f4), to(#0255b1));
+	background: -webkit-linear-gradient(top, #2c87f4 0%, #0255b1 100%);
+	background: -o-linear-gradient(top, #2c87f4 0%, #0255b1 100%);
+	background: linear-gradient(to bottom, #2c87f4 0%, #0255b1 100%);
+	border-bottom: solid 1px #266ebb;
+	border-top: solid 1px #479cf8;
+	overflow: hidden;
 }
 .btn_wrap_2 {  border-bottom:none; border-top:none;}
 .btn--primary:before, .btn_wrap_2:before {  content: '';  position: absolute;  z-index: -1;  left: 0;  right: 0;  top: 0;  bottom: 0;  opacity: 0;
